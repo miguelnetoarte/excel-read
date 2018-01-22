@@ -24,7 +24,7 @@
             app.controller("excelController", function($scope, $window) {
             $scope.quantidade = 30;
             var req = new XMLHttpRequest();
-            req.open("GET", '/teste/ranking.xlsx', true);
+            req.open("GET", '/excel-read/ranking.xlsx', true);
             req.responseType = "arraybuffer";
 
             req.onload = function(e) {
